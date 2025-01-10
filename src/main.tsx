@@ -5,9 +5,13 @@ import 'bootstrap/scss/bootstrap.scss';
 
 import LoginPage from './components/LoginScreen.tsx'
 
+
+import CarouselComponent from './components/MenuComponents/Carosal.tsx'
+
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     {/* <App /> */}
-    <LoginPage />
+    <CarouselComponent />
   </StrictMode>,
 )
