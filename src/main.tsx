@@ -7,5 +7,14 @@ import App from './App.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
+
+
+import CarouselComponent from './components/MenuComponents/Carosal.tsx'
+
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    {/* <App /> */}
+    {/* <CarouselComponent /> */}
   </StrictMode>,
 )
