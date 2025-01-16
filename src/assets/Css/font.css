@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Ribeye";
+    src: url("../Font/Ribeye-Regular.ttf") format(woff2);
+
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../Font/Roboto-Light.ttf") format(woff2);
+}

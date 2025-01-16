@@ -1,0 +1,24 @@
+.Side-Menu-container {
+    width: 55px;
+    height: 90vh;
+    background-color: #DBF8F6;
+    border-radius: 10px;
+}
+
+.side-menu-imgs {
+    margin-left: 19px;
+    margin-top: 15px;
+    background-color: transparent;
+}
+
+.side-menu-text {
+    text-align: center;
+    color: #898989;
+    margin-top: 5px;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.side-menus {
+    cursor: pointer;
+}

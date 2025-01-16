@@ -5,16 +5,7 @@ import App from './App.tsx'
 // import LoginPage from './components/LoginScreen.tsx'
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+  // <StrictMode>
     <App />
-
-
-import CarouselComponent from './components/MenuComponents/Carosal.tsx'
-
-
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    {/* <App /> */}
-    {/* <CarouselComponent /> */}
-  </StrictMode>,
+  // </StrictMode>,
 )
