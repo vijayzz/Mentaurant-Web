@@ -12,12 +12,12 @@ function App() {
 
   return (
     <>
-      
+
       <div>
         <BrowserRouter>
-        <Navigate/>
+          <Navigate />
         </BrowserRouter>
-        
+
       </div>
     </>
   )
