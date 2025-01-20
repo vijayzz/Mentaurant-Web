@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("../Font/OpenSans-Bold.ttf") format("woff2");
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("../Font/Roboto-Bold.ttf") format("woff2");
+}

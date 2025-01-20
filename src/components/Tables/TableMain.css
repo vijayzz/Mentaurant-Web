@@ -1,0 +1,12 @@
+.top{
+    display: flex;
+    gap: 10px;
+}
+
+.tablebar{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 50%;
+    overflow: hidden
+}
