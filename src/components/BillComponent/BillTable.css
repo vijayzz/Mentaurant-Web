@@ -1,0 +1,16 @@
+.bill{
+    width: 100%;
+ 
+}
+
+.ant-table-wrapper .ant-table-thead >tr>td{
+    background-color: pink;
+}
+
+
+.ant-table-wrapper .ant-table-thead >tr>td{
+    background-color: pink;
+}
+.ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-7ny38l).ant-table-wrapper .ant-table-thead >tr>td{
+    background-color: red !important;
+}

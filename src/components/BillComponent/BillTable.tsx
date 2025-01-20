@@ -1,4 +1,5 @@
 import { Table } from "antd";
+import './BillTable.css';
 
 export default function BillTable(){
     const dataSource = [
@@ -127,16 +128,10 @@ const columns = [
     key:'type'
   }
 ];
-const tableStyle = {
-  width: '100%', // Adjust width as needed
-  border: '1px solid #ccc', // Add table border
-  borderRadius: '5px',
-  boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
-};
 
     return(
-        <div>
-           <Table dataSource={dataSource} columns={columns} style={tableStyle}  />;
+        <div className="bill">
+           <Table dataSource={dataSource} columns={columns} />;
         </div>
     )
 }
