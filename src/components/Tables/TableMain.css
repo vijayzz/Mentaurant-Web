@@ -1,12 +1,16 @@
-.top{
+.top {
+    margin-left: 25px;
     display: flex;
     gap: 10px;
+    margin-top: 33px;
 }
 
-.tablebar{
+.tablebar {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    width: 50%;
-    overflow: hidden
+    width: 54%;
+    overflow: hidden;
+    margin-left: 31px;
+    margin-top: 30px;
 }

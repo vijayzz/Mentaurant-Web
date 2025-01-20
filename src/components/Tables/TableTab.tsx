@@ -9,7 +9,7 @@ export default function TableTab(props: any) {
         <>
             <div className='container'>
                 <img
-                   
+                
                     src={occupiedTable === status ? appImages.tableOccupied : appImages.tableAvailable}
                     onClick={() => callBack(status)}
                 />

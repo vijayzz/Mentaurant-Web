@@ -7,13 +7,13 @@ import { title } from "process";
 
 export default function TableMain() {
     let abc: any = [
-        {title: 'Ground Floor',   count: 24, id: 1},
-        {title: '1st Floor',   count: 24,  id: 2},
-        {title:  "2nd Floor", count: 14, id: 3},
-        {title: "3rd Floor", count: 30, id: 4},
-        {title: "4th Floor", count: 25, id: 5},
-        {title: "5th Floor", count: 12, id : 6},
-        {title: "6th Floor", count: 12, id: 7}
+        { title: 'Ground Floor', count: 24, id: 1 },
+        { title: '1st Floor', count: 24, id: 2 },
+        { title: "2nd Floor", count: 14, id: 3 },
+        { title: "3rd Floor", count: 30, id: 4 },
+        { title: "4th Floor", count: 25, id: 5 },
+        { title: "5th Floor", count: 12, id: 6 },
+        { title: "6th Floor", count: 12, id: 7 }
     ]
     const [activeId, setActiveId] = useState(null);
 
@@ -23,43 +23,44 @@ export default function TableMain() {
     }
 
     let tabletab: any = [
-        {tableNo: 1,   status: 'available' },
-        {tableNo: 2,   status: 'available'},
-        {tableNo:3, status:'occupied'  },
-        {tableNo:4, status:'available' },
-        {tableNo:5, status: 'available'},
-        {tableNo: 6,   status: 'occupied'},
-        {tableNo: 7,   status: 'available'},
-        {tableNo:8, status:'available'  },
-        {tableNo:9, status:'available' },
-        {tableNo:10, status: 'available'},
-        {tableNo:11, status:'available'},
-        {tableNo:12, status: 'available'},
-        {tableNo:13, status:'available'}
+        { tableNo: 1, status: 'available' },
+        { tableNo: 2, status: 'available' },
+        { tableNo: 3, status: 'occupied' },
+        { tableNo: 4, status: 'available' },
+        { tableNo: 5, status: 'available' },
+        { tableNo: 6, status: 'occupied' },
+        { tableNo: 7, status: 'available' },
+        { tableNo: 8, status: 'available' },
+        { tableNo: 9, status: 'available' },
+        { tableNo: 10, status: 'available' },
+        { tableNo: 11, status: 'available' },
+        { tableNo: 12, status: 'available' },
+        { tableNo: 13, status: 'available' }
     ]
-     const[availableTable, setAvailableTable] = useState(null)
+    const [availableTable, setAvailableTable] = useState(null)
 
-    const onTableClick = (status : any) =>{
+    const onTableClick = (status: any) => {
         setAvailableTable(status)
-        }   
+    }
 
     return (
         <>
-            <div className="top">
-                {abc.map((ele: any) => {
-                    return (
-                        <FloorTab
-                            title={ele.title}
-                            count={ele.count}
-                            id={ele.id}
-                            activeId={activeId}
-                            callBack={onTabClick} />
-                    )
-                })} 
-            </div>
-           
-            <div className="tablebar">
-                {tabletab.map((ele: any) => {
+            <div>
+                <div className="top">
+                    {abc.map((ele: any) => {
+                        return (
+                            <FloorTab
+                                title={ele.title}
+                                count={ele.count}
+                                id={ele.id}
+                                activeId={activeId}
+                                callBack={onTabClick} />
+                        )
+                    })}
+                </div>
+
+                <div className="tablebar">
+                    {tabletab.map((ele: any) => {
                         return (
                             <TableTab
                                 tableNo={ele.tableNo}
@@ -72,9 +73,12 @@ export default function TableMain() {
 
                     )}
 
+                </div>
+
             </div>
-                
-           
+
+
+
 
         </>
     )
