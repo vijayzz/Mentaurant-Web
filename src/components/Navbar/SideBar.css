@@ -22,3 +22,10 @@
 .side-menus {
     cursor: pointer;
 }
+
+.side-menus.active .side-menu-text {
+    color:#DA3743
+}
+  .selected-line{
+    border-bottom: 2px solid black;
+  }

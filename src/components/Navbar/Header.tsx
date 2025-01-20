@@ -14,14 +14,14 @@ export default function Header() {
                 <Input
                     placeholder="Search for food, coffee, etc."
                     prefix={<SearchOutlined />}
-                    style={{ borderRadius: '20px', padding: '10px' }}
+                    style={{ borderRadius: '20px', padding: '10px',marginTop:'15px',width:'200%' }}
                 />
             </div>
             <div style={{display:'flex',gap:'10px',marginLeft:'20%'}}>
                 <img src={profileImg} alt="" style={{height:'60px',marginTop:'10px'}} />
                 <div>
-                    <p>name</p>
-                    <p>role</p>
+                    <p className='name-text'>Haritha</p>
+                    <p className='role-text'>Admin</p>
                 </div>
             </div>
         </div>
