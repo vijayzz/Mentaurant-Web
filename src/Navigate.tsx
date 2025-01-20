@@ -5,6 +5,7 @@ import Menu from "./components/SideMenuPage/Menu";
 import Setting from "./components/SideMenuPage/Settings";
 import Table from "./components/SideMenuPage/Table";
 import Bills from "./components/SideMenuPage/Bills";
+import TableMain from "./components/Tables/TableMain";
 
 export default function Navigate() {
     return (
@@ -13,7 +14,7 @@ export default function Navigate() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/menu" element={<Menu />} />
                 <Route path="/settings" element={<Setting/>} />
-                <Route path="/table" element={<Table/>}/>
+                <Route path="/table" element={<TableMain/>}/>
                 <Route path="/bill" element={<Bills/>} />
                 <Route/>
             </Route>
