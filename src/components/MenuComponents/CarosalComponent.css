@@ -1,0 +1,87 @@
+/* Style for the scrollable container */
+.scrollable-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+  
+  .scrollable-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+  }
+  
+  /* Style for each food category item */
+  .food-category {
+    text-align: center;
+    flex: 0 0 auto;
+    width: 100px;
+    cursor: pointer;
+  }
+  
+  .food-category img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .food-category-title {
+    margin-top: 5px;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+  }
+  
+  .food-category.active .food-category-title {
+    color: #DA3743; /* Change text color to red for the active item */
+  }
+  
+  .food-category.active .food-category-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 25%;
+    width: 50%;
+    height: 4px; /* Adjust the thickness of the underline */
+    background-color: #DA3743;
+  }
+  
+  
+  /* Style for navigation buttons */
+  .nav-button {
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .nav-button.right {
+    background-color: red;
+    border: 2px solid white;
+  }
+  
+  .nav-button span {
+    display: block;
+    border: solid;
+    border-width: 0 2px 2px 0;
+    padding: 5px;
+  }
+  
+  .nav-button.left span {
+    transform: rotate(135deg);
+    border-color: red;
+  }
+  
+  .nav-button.right span {
+    transform: rotate(-45deg);
+    border-color: white;
+  }
+  
