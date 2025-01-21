@@ -1,0 +1,19 @@
+.Mentaurant-text{
+    font-family: "Ribeye";
+    margin-top: 22px;
+}
+.hotel-img{
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.name-text{
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 600;
+}
+.role-text{
+    font-family: "Roboto";
+    font-size: 14px;
+    margin-top: -12px;
+}
