@@ -1,14 +1,18 @@
 .Side-Menu-container {
-    width: 55px;
+    width: 70px;
     height: 90vh;
     background-color: #DBF8F6;
     border-radius: 10px;
+    position: fixed;
+    z-index: 1;
+    top: 65px;
 }
 
 .side-menu-imgs {
-    margin-left: 19px;
+    margin-left: 25px;
     margin-top: 15px;
     background-color: transparent;
+    transition: all 0.3s ease;
 }
 
 .side-menu-text {
@@ -24,8 +28,10 @@
 }
 
 .side-menus.active .side-menu-text {
-    color:#DA3743
+    color: #DA3743
 }
-  .selected-line{
+  
+.selected-line {
     border-bottom: 2px solid black;
-  }
+}
+
