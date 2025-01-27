@@ -1,40 +1,60 @@
-
-import { Card } from "antd";
-import { ClockCircleOutlined } from "@ant-design/icons";
+import cookingpan from "../../assets/images/cookingpan.svg";
+import { ReactNode } from "react"; // Import ReactNode
 
 interface FoodItemsProps {
   image: string;
-  title: string;
+  title: ReactNode; // Update the type to ReactNode
   time: string;
   price: number;
+  symbol: string; // Add symbol property for Veg/Non-Veg icon
 }
 
-export default function FoodItems({ image, title, time, price }: FoodItemsProps) {
+export default function FoodItems({ image, title, time, price, symbol }: FoodItemsProps) {
   return (
-    <Card
-      hoverable
+    <div
       style={{
         width: 300,
+        height: 240,
         borderRadius: "10px",
         overflow: "hidden",
-        boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+        boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
+        padding: "10px",
+        fontFamily: "sans-serif",
       }}
-      cover={
-        <img
-          alt={title}
-          src={image}
-          style={{ height: "150px", objectFit: "cover" }}
-        />
-      }
     >
+      <div>
+        <img
+          alt={typeof title === "string" ? title : "Food Item"}
+          src={image}
+          style={{
+            width: "100%",
+            height: "130px",
+            objectFit: "cover",
+            borderRadius: "8px", // Slight rounding for the image itself
+          }}
+        />
+      </div>
       <div>
         <div
           style={{
             fontSize: "18px",
             fontWeight: "bold",
-            marginBottom: "5px",
+            marginBottom: "10px",
+            marginTop: "10px", // Space between the image and title
+            display: "flex",
+            alignItems: "center",
+            gap: "10px", // Gap between symbol and title
           }}
         >
+          <img
+            src={symbol}
+            alt="Category Symbol"
+            style={{
+              width: "20px",
+              height: "20px",
+              objectFit: "contain",
+            }}
+          />
           {title}
         </div>
         <div
@@ -45,11 +65,12 @@ export default function FoodItems({ image, title, time, price }: FoodItemsProps)
           }}
         >
           <span>
-            <ClockCircleOutlined
+            <img
+              src={cookingpan}
               style={{
                 marginRight: "5px",
-                color: "#ff4d4f",
               }}
+              alt="Cooking Pan"
             />
             {time}
           </span>
@@ -63,6 +84,6 @@ export default function FoodItems({ image, title, time, price }: FoodItemsProps)
           </span>
         </div>
       </div>
-    </Card>
+    </div>
   );
 }
