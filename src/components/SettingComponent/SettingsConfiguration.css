@@ -1,0 +1,27 @@
+.config-text {
+    text-align: center;
+    /* Center the text horizontally */
+    color: #0E0E0E;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 30%;
+    margin-left: 45px;
+}
+
+.configuration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    padding-left: 100px;
+}
+
+.configuration-container p {
+    font-size: 16px;
+    font-family: "Roboto";
+    color: #0E0E0E;
+    margin: 0;
+    padding-left:20px;
+}

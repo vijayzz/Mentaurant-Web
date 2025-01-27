@@ -28,12 +28,7 @@ export default function BillCalendar() {
             <div className="calendar-container">
                 <div>
                     <Select
-                        style={{
-                            width: "110px",
-                            height: "30px",
-                            paddingLeft: "10px",
-                            paddingTop: "5px",
-                        }}
+                        className="select-options"
                         onChange={(value) => setSelectedMonthId(value)}
                         placeholder="Month"
                     >

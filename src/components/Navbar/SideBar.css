@@ -25,10 +25,14 @@
 
 .side-menus {
     cursor: pointer;
+    text-decoration: none;
 }
 
 .side-menus.active .side-menu-text {
-    color: #DA3743
+    color: #DA3743;
+    border-bottom: 2px solid #DA3743; 
+    border-radius: 2px;
+    
 }
   
 .selected-line {

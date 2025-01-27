@@ -6,4 +6,5 @@ export const appImages = {
     tableimg : require('../assets/images/tableImg.svg'),
     billimg : require ('../assets/images/billImg.svg'),
     settingImg: require('../assets/images/settingImg.svg'),
+    flootImg:require('../assets/images/floorImg.svg')
 }
