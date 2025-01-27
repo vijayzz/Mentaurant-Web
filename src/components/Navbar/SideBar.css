@@ -12,7 +12,7 @@
     margin-left: 25px;
     margin-top: 15px;
     background-color: transparent;
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
 }
 
 .side-menu-text {
@@ -35,3 +35,7 @@
     border-bottom: 2px solid black;
 }
 
+.side-menus.active .side-menu-imgs {
+    filter: invert(35%) sepia(25%) saturate(150%) hue-rotate(15deg) brightness(120%) contrast(110%);
+
+  }

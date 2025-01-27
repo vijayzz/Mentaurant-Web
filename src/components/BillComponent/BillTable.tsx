@@ -167,7 +167,7 @@ export default function BillTable() {
 
     },
     {
-      title: 'Customer No',
+      title: 'Customer No.',
       dataIndex: 'customerNo',
       key: 'customerNo',
       width: 40,
