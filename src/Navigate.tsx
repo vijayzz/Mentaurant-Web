@@ -6,13 +6,14 @@ import Setting from "./components/SideMenuPage/Settings";
 import Table from "./components/SideMenuPage/Table";
 import Bills from "./components/SideMenuPage/Bills";
 import TableMain from "./components/Tables/TableMain";
+import FoodMenu from "./components/FoodMenus";
 
 export default function Navigate() {
     return (
         <Routes>
             <Route path="/" element={<Layout />}>
                 <Route path="/home" element={<Home />} />
-                <Route path="/menu" element={<Menu />} />
+                <Route path="/menu" element={<FoodMenu />} />
                 <Route path="/settings" element={<Setting/>} />
                 <Route path="/table" element={<TableMain/>}/>
                 <Route path="/bill" element={<Bills/>} />
