@@ -1,5 +1,5 @@
 export default function Setting(){
     return(
-       <h1>hell</h1>
+       <h1 style={{margin:'7%'}}>hell</h1>
     )
 }
