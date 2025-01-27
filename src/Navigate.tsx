@@ -3,7 +3,6 @@ import Layout from "./components/Navbar/Layout";
 import Home from "./components/SideMenuPage/Home";
 import Menu from "./components/SideMenuPage/Menu";
 import Setting from "./components/SideMenuPage/Settings";
-import Table from "./components/SideMenuPage/Table";
 import Bills from "./components/SideMenuPage/Bills";
 import TableMain from "./components/Tables/TableMain";
 
