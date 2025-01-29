@@ -1,13 +1,17 @@
 .Side-Menu-container {
-    width: 55px;
-    height: 90vh;
+    width: 70px;
+    height: 100%;
     background-color: #DBF8F6;
     border-radius: 10px;
+    position: fixed;
+    z-index: 1;
+    top: 65px;
 }
 
 .side-menu-imgs {
-    margin-left: 19px;
+    margin-left: 22px;
     margin-top: 15px;
+    height: 25px;
     background-color: transparent;
 }
 
@@ -21,11 +25,16 @@
 
 .side-menus {
     cursor: pointer;
+    text-decoration: none;
 }
 
 .side-menus.active .side-menu-text {
-    color:#DA3743
+    color: #DA3743;
+    border-bottom: 2px solid #DA3743; 
+    border-radius: 2px;
+    
 }
-  .selected-line{
+  
+.selected-line {
     border-bottom: 2px solid black;
-  }
+}
