@@ -6,5 +6,7 @@ export const appImages = {
     tableimg : require('../assets/images/tableImg.svg'),
     billimg : require ('../assets/images/billImg.svg'),
     settingImg: require('../assets/images/settingImg.svg'),
-    flootImg:require('../assets/images/floorImg.svg')
+    floorImg:require('../assets/images/floorImg.svg'),
+    menuImg:require('../assets/images/menusImg.svg'),
+    userImg :require('../assets/images/userImg.svg')
 }

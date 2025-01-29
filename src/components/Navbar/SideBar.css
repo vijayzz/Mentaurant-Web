@@ -1,6 +1,6 @@
 .Side-Menu-container {
     width: 70px;
-    height: 90vh;
+    height: 100%;
     background-color: #DBF8F6;
     border-radius: 10px;
     position: fixed;
@@ -9,10 +9,10 @@
 }
 
 .side-menu-imgs {
-    margin-left: 25px;
+    margin-left: 22px;
     margin-top: 15px;
+    height: 25px;
     background-color: transparent;
-    /* transition: all 0.3s ease; */
 }
 
 .side-menu-text {
@@ -38,8 +38,3 @@
 .selected-line {
     border-bottom: 2px solid black;
 }
-
-.side-menus.active .side-menu-imgs {
-    filter: invert(35%) sepia(25%) saturate(150%) hue-rotate(15deg) brightness(120%) contrast(110%);
-
-  }

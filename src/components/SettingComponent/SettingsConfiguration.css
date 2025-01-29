@@ -1,13 +1,25 @@
+.settings-configuration {
+    width: 17%;
+    height: 555px;
+    background-color: #EDFBFA;
+    /* position: relative; */
+    left: 6%;
+    top: 68px;
+    padding: 10px;
+    border-radius: 14px;
+    position: absolute;
+
+}
+
 .config-text {
-    text-align: center;
-    /* Center the text horizontally */
     color: #0E0E0E;
     font-family: "Roboto";
     font-size: 18px;
     font-weight: 600;
     width: 100%;
-    margin-top: 30%;
-    margin-left: 45px;
+    margin-top: 2%;
+    margin-left: 5px;
+    padding-top: 17px;
 }
 
 .configuration-container {
@@ -15,13 +27,26 @@
     justify-content: center;
     align-items: center;
     margin-top: 5%;
-    padding-left: 100px;
+    padding-top: 15px;
+    cursor: pointer;
 }
 
-.configuration-container p {
-    font-size: 16px;
+.img-management {
+    margin-left: -30px;
+    margin-top: -6px;
+}
+
+.management-text {
+    font-size: 15px;
     font-family: "Roboto";
     color: #0E0E0E;
     margin: 0;
-    padding-left:20px;
+    padding-left: 11px;
+    color: #898989;
+}
+
+.configuration-container.active .management-text {
+    color: #DA3743;
+    border-bottom: 2px solid #DA3743;
+    border-radius: 2px;
 }

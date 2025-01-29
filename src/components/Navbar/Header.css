@@ -30,10 +30,11 @@
     font-family: "Roboto";
     font-size: 13px;
     font-weight: 600;
+    margin-top: 13px;
 }
 
 .role-text {
     font-family: "Roboto";
     font-size: 11px;
-    margin-top: -12px;
+    margin-top: -10px;
 }

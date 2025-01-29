@@ -6,7 +6,7 @@ export default function Layout() {
     return (
         <div>
             <Header />
-            <div style={{ display: 'flex', width:'100%' }}>
+            <div style={{ display: 'flex'}}>
                 <SideBar />
                 <Outlet />
             </div>
