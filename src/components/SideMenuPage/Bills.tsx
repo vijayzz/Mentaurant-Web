@@ -4,7 +4,7 @@ import Payment from "../BillComponent/Payment";
 
 export default function Bills() {
     return (
-        <div>
+        <div style={{height:'100%'}}>
             <BillCalendar />
             <Payment />
             <BillTable />
