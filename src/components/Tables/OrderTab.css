@@ -1,0 +1,41 @@
+.order {
+    margin-left: 15px;
+    margin-top: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tableimg {
+    margin-top: 13px;
+    margin-left: 15px;
+
+}
+
+.tabletext {
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.clktext {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+/* .order.active {
+    color: blue !important;
+    border-bottom: 2px solid orange !important;
+    border-radius: 2px !important;
+} */
+.actives{
+    
+    border-bottom: 4px solid #DA3743 !important;
+    border-radius: 2px;
+    
+}
+
+  

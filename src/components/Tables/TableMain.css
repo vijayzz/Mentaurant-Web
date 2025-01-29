@@ -3,14 +3,38 @@
     display: flex;
     gap: 10px;
     margin-top: 33px;
+    width: 100%;
 }
 
 .tablebar {
-    display: flex;
+    display: flex
+;
     gap: 10px;
     flex-wrap: wrap;
     width: 54%;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-left: 31px;
     margin-top: 30px;
+    /* flex: 1; */
+    /* width: 100%;
+}
+
+.para{
+       /* margin-top: 18px; */
+       margin-left: 30px;
+       font-family: "Roboto";
+       font-weight: bold;
+       font-size: 18px;
+}
+
+
+
+.billtab{
+
+       
+        margin-top: 30px;
+        background-color: #EDFBFA;
+        border-radius: 10px;
+        width: 38%;
+        margin-right: 63px;
 }

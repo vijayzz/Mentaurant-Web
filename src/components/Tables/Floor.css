@@ -4,20 +4,17 @@
     height: 32px;
     width: 146px;
     color: #898989;
-    font-family: "Roboto-Bold";
+    font-family: "Roboto";
     font-size: 16px;
+    font-weight: 500;
 
 }
 
 .button-1.active{
-    background-color:red;
+    background-color:rgba(218, 55, 67, 1);
     border-color:white;
    color: white;
+   
 }
 
-    /* .button-1:hover{
-       background-color: #DA3743;
-       color: white;
-       border-color: #DA3743;
-        
-    } */
+
