@@ -1,5 +1,8 @@
-export default function Setting(){
-    return(
-       <h1 style={{margin:'7%'}}>hell</h1>
+import SettingsConfiguration from "../SettingComponent/SettingsConfiguration";
+
+
+export default function Setting() {
+    return (
+        <SettingsConfiguration />
     )
 }
