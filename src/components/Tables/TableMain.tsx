@@ -67,7 +67,7 @@ export default function TableMain() {
 
     return (
         <>
-            <div>
+            <div style={{width: "100%"}}>
                 <p className="para">Table</p>
                 <div className="top">
                     {floortab.map((ele: any) => {
@@ -81,7 +81,7 @@ export default function TableMain() {
                         )
                     })}
                 </div>
-                <div style={{ display: 'flex' }}>
+                <div style={{ display: 'flex', height : "300px" }}>
 
                     <div className="tablebar">
                         {tabletab.map((ele: any) => {

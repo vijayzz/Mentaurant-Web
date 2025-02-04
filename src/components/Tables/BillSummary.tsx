@@ -4,74 +4,55 @@ import { Button, Table } from "antd";
 import './BillSummary.css'
 import { appImages } from "../../globals/appImages";
 import { log } from "console";
+import SubTotal from "./SubTotal";
 
 export default function BillSummary() {
-  //     //  const { tableData, tableColumn, summaryData, tableNo}
-  //     const {name} = props
-  //     console.log('props',props)
-  //     console.log(name)
+
   const ordertab = [
-    {orderId: 12564878,tableNo: 1 }
-    
+    { orderId: 12564878, tableNo: 1 }
+
 
   ]
 
- 
-  const onOrderTabClick = (orderId: any) => {
-    // console.log("====>",orderId===activeOrderId);
-    // setActiveOrderId(orderId);
-  };
 
-  //  const billDetails : any = [
-  //        {tableData : "tableData", tableColumn : " tableColumn", summaryData : " summaryData", tableNo: "tableNo"},
+  // const onOrderTabClick = (orderId: any) => {
+  //   // console.log("====>",orderId===activeOrderId);
+  //   // setActiveOrderId(orderId);
+  // };
 
-  //   ]
-
-  //       const tableColumn : any = [{
-  //         item : "ITEM",
-
-  //       }]
-
-  //    const tableData: any = [
-  //     {
-  //         item : 'CHICKEN WINGS',
-  //         price : 2000,
-  //         qty : 1,
-  //     }
-  //    ]
-
-  //    const summaryData: any = [{
-  //     subTotal : '₹ 3,500',
-  //     serviceCharge : '₹ 300',
-  //     tax : '₹ 16',
-  //    }]
   const dataSource = [
     {
       key: '1',
       item: ' CHICKEN WINGS',
-      price: '₹ 2000',
+      price: '₹2000',
       qty: 1,
       subtotal: '₹ 2000',
-      Image : appImages.prepareimage
+      Image: appImages.prepareimage,
+      isFood: true,
 
     },
     {
       key: '2',
       item: 'SUMMER SALAD',
-      price: '₹ 1000',
+      price: '₹1000',
       qty: 1,
       subtotal: '₹ 1000',
-      Image : appImages.prepareimage
+      Image: appImages.prepareimage,
+      isFood: true,
+
     },
     {
       key: '3',
       item: 'FRENCH FRIES',
-      price: '₹ 1000',
+      price: "₹ 500",
       qty: 1,
-      subtotal: '₹ 1000',
-      Image : appImages.prepareimage
+      subtotal: "₹ 500",
+      Image: appImages.prepareimage,
+      isFood: true,
     },
+
   ];
+
 
   const columns = [
     {
@@ -79,17 +60,20 @@ export default function BillSummary() {
       dataIndex: 'item',
       key: 'item',
       render: (text: string, record: any) => (
-        <span className="prepare">
-           {text}  
-          <Button>
-          <img
-            src={record.Image}
-            alt={text}
-            style={{ width: '30px', height: '20px', objectFit: 'cover', marginRight: '5px' }}
-          />PREPARE
-          </Button>
-         
-        </span>                      
+        <span>
+          {text}
+          {record.isFood &&
+            <Button >
+              <img
+                src={record.Image}
+                alt={text}
+                style={{ width: '30px', height: '20px', objectFit: 'cover', marginRight: '5px' }}
+
+              />PREPARE
+            </Button>
+          }
+        </span>
+
       )
     },
     {
@@ -107,6 +91,9 @@ export default function BillSummary() {
       dataIndex: 'subtotal',
       key: 'subtotal',
     },
+
+
+
   ];
 
   return (
@@ -115,16 +102,20 @@ export default function BillSummary() {
         {ordertab.map((ele: any) => {
           return (
             <OrderTab
-             
+
               orderId={ele.orderId}
               tableNo={ele.tableNo}
-              callBack={onOrderTabClick}
-              // activeId={activeOrderId}
+            // callBack={onOrderTabClick}
+            // activeId={activeOrderId}
             />
           )
         })}
-        <div style={{marginTop: '15px' , marginLeft: '15px', marginRight: '15px'}}>
-          <Table dataSource={dataSource} columns={columns} pagination={false}  />
+        <div style={{ marginTop: '15px', marginLeft: '15px', marginRight: '15px' }}>
+          <Table dataSource={dataSource} columns={columns} pagination={false} />
+          <div>
+            <SubTotal/>
+          </div>
+          
         </div>
       </div>
 

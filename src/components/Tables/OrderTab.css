@@ -17,6 +17,8 @@
     text-align: center;
     font-size: 17px;
     font-weight: 600;
+    margin-right: 76%;
+    margin-top: -3%;
 }
 
 .clktext {
@@ -26,11 +28,6 @@
     text-align: center;
 }
 
-/* .order.active {
-    color: blue !important;
-    border-bottom: 2px solid orange !important;
-    border-radius: 2px !important;
-} */
 .actives{
     
     border-bottom: 4px solid #DA3743 !important;

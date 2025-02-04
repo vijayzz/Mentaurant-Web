@@ -1,9 +1,25 @@
-.ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-7ny38l).ant-table-wrapper .ant-table-thead >tr>td {
-    background-color: #FFF1C7 !important;
-    border-radius: 5px;
+.tables {
+    margin-top: '15px';
+    margin-left: '15px';
+    margin-right: '15px'
 }
 
-.ant-table-wrapper .ant-table-tbody >tr >th, :where(.css-dev-only-do-not-override-7ny38l).ant-table-wrapper .ant-table-tbody >tr >td {
+
+.tables:where(.css-dev-only-do-not-override-7ny38l).ant-table-wrapper {
+    clear: both;
+    max-width: 100%;
+}
+
+
+.ant-table-wrapper .ant-table-thead>tr>th,
+:where(.css-dev-only-do-not-override-7ny38l).ant-table-wrapper .ant-table-thead>tr>td {
+    background-color: #FFF1C7 !important;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.ant-table-wrapper .ant-table-tbody>tr>th,
+:where(.css-dev-only-do-not-override-7ny38l).ant-table-wrapper .ant-table-tbody>tr>td {
     /* transition: background 0.2s, border-color 0.2s; */
     /* border-bottom: 1px solid #f0f0f0; */
     background-color: #FFFCF2;
@@ -12,39 +28,44 @@
     font-size: 18px;
 }
 
-:where(.css-dev-only-do-not-override-7ny38l).ant-table-wrapper .ant-table-tbody .ant-table-row >.ant-table-cell-row-hover {
+:where(.css-dev-only-do-not-override-7ny38l).ant-table-wrapper .ant-table-tbody .ant-table-row>.ant-table-cell-row-hover {
     background: #FFFCF2;
 }
 
- .rowClassName td:first-child{
+.rowClassName td:first-child {
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
- }
+}
 
- .ant-table-wrapper .ant-table-tbody >tr >td{
+.tables .ant-table-wrapper .ant-table-tbody>tr>td {
     border-bottom: none;
- }
+}
 
- .prepare{
+.prepare {
     display: flex;
     flex-direction: column;
- }
- 
- :where(.css-dev-only-do-not-override-7ny38l).ant-btn-variant-outlined, :where(.css-dev-only-do-not-override-7ny38l).ant-btn-variant-dashed {
+}
+
+:where(.css-dev-only-do-not-override-7ny38l).ant-btn-variant-outlined,
+:where(.css-dev-only-do-not-override-7ny38l).ant-btn-variant-dashed {
     border-color: #9290FE;
     background: #ffffff;
     border-radius: 19px;
     color: #9290FE;
-    width: 75%;
- }
+    width: 70%;
+}
 
- /* */
- .ant-btn-variant-dashed:not(:disabled):not(.ant-btn-disabled):hover{
-     background-color: #ffffff;
-     color:#9290FE;
- }
+/* */
+.ant-btn-variant-dashed:not(:disabled):not(.ant-btn-disabled):hover {
+    background-color: #952424;
+    color: #9290FE;
+}
 
- :where(.css-dev-only-do-not-override-7ny38l).ant-btn-variant-outlined:where(.css-dev-only-do-not-override-7ny38l).ant-btn-variant-dashed:not(:disabled):not(.ant-btn-disabled):active{
-   background-color: #9290FE;
- }
- 
+:where(.css-dev-only-do-not-override-7ny38l).ant-btn-variant-outlined:where(.css-dev-only-do-not-override-7ny38l).ant-btn-variant-dashed:not(:disabled):not(.ant-btn-disabled):active {
+    background-color: #9290FE;
+}
+
+.amount.ant-table-cell{
+margin-top: 10px;
+}
+

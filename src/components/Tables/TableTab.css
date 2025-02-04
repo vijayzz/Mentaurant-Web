@@ -1,14 +1,14 @@
-.container{
+.container{    
     display: flex;
-    /* width: 100px; */
-    /* height: max-content; */
-    border: 1px solid #E3E3E3;
-    border-radius: 10px;
-    margin-bottom: 8px;
-    margin-top: 10px;
-    justify-content: center;
-    padding: 10px;
-    position: relative;
+        /* width: 100px; */
+        /* height: max-content; */
+        border: 1px solid #E3E3E3;
+        border-radius: 10px;
+        margin-bottom: 26px;
+        /* margin-top: 6px; */
+        justify-content: center;
+        padding: 14px;
+        position: relative;
 
 }
 
@@ -19,7 +19,7 @@
 
 .num{
     position: absolute;
-    top: 43px;
+    top: 50px;
     text-align: center;
     font-size: 25px;
     color: white;
