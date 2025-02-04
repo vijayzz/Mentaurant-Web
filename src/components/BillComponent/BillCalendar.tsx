@@ -5,7 +5,7 @@ import "./BillCalendar.css";
 export default function BillCalendar() {
     const months = [
         { id: 1, name: "January", days: 31 },
-        { id: 2, name: "February", days: 28 }, // Default for non-leap years
+        { id: 2, name: "February", days: 28 },
         { id: 3, name: "March", days: 31 },
         { id: 4, name: "April", days: 30 },
         { id: 5, name: "May", days: 31 },

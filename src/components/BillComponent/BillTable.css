@@ -1,11 +1,11 @@
 .bill {
     width: 55%;
     box-sizing: border-box;
-    margin-left: 6%;
+    margin-left: 7%;
     margin-top: 1%;
 }
 
-.ant-table-wrapper .ant-table-thead>tr>th,
+ .ant-table-wrapper .ant-table-thead>tr>th,
 :where(.css-dev-only-do-not-override-7ny38l).ant-table-wrapper .ant-table-thead>tr>td {
     background-color: #FFF1C7 !important;
 }

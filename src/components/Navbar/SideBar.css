@@ -6,12 +6,13 @@
     position: fixed;
     z-index: 1;
     top: 65px;
+    margin-left: 10px;
 }
 
 .side-menu-imgs {
-    margin-left: 22px;
+    margin-left: 26px;
     margin-top: 15px;
-    height: 25px;
+    height: 18px;
     background-color: transparent;
 }
 

@@ -9,10 +9,14 @@ import UserManagement from "./components/SettingComponent/ManagementComponent/Us
 import FloorManagement from "./components/SettingComponent/ManagementComponent/FloorManagement";
 import TableManagement from "./components/SettingComponent/ManagementComponent/TableManagement";
 import MenuManagement from "./components/SettingComponent/ManagementComponent/MenuManagement";
+import Login from "./components/LoginComponent/Login";
+
 
 export default function Navigate() {
+    
     return (
         <Routes>
+            <Route path="/" element={<Login />} />
             <Route path="/" element={<Layout />}>
                 <Route path="/home" element={<Home />} />
                 <Route path="/menu" element={<FoodMenu />} />
