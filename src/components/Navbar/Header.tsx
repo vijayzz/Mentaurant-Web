@@ -12,7 +12,7 @@ export default function Header() {
                 <img src={profileImg} alt="" className="profile-img" />
                 <div>
                     <p className='name-text'>Haritha</p>
-                    <p className='role-text'>Admin</p>
+                    <p className='role-txt'>Admin</p>
                 </div>
             </div>
         </div>

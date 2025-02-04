@@ -1,4 +1,7 @@
 export const appImages = {
+    loginbg:require('../assets/images/loginbg.svg'),
+    hotelImg:require('../assets/images/hotelImg.svg'),
+    boximg:require('../assets/images/boximg.svg'),
     tableAvailable: require('../assets/images/AvailableImg.svg'),
     tableOccupied : require('../assets/images/occupiedImg.svg'),
     homeImg:require('../assets/images/homeImg.svg'),
@@ -8,5 +11,7 @@ export const appImages = {
     settingImg: require('../assets/images/settingImg.svg'),
     floorImg:require('../assets/images/floorImg.svg'),
     menuImg:require('../assets/images/menusImg.svg'),
-    userImg :require('../assets/images/userImg.svg')
+    userImg :require('../assets/images/userImg.svg'),
+    usertableImg:require('../assets/images/usertableimg.svg'),
+    profileImg:require('../assets/images/profilePic.svg')
 }
