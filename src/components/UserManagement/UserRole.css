@@ -1,6 +1,36 @@
-.role-container{
+.user-role {
     display: flex;
-    gap: 3%;
+
+}
+
+.role-container {
+    display: flex;
+    gap: 10%;
     margin-top: 3%;
     margin-left: 2%;
+}
+
+.user-role-texts {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #898989;
+    cursor: pointer;
+}
+
+.user-role-texts-active {
+    color: #DA3743 !important; 
+    border-bottom: 2px solid #DA3743 !important;
+    border-radius: 2px;
+}
+
+.add-btns {
+    margin-left: 65%;
+    margin-top: 15px;
+    background-color: #DA3743;
+    color: #FFFFFF;
+}
+
+:where(.css-dev-only-do-not-override-7ny38l).ant-btn-color-dangerous.ant-btn-variant-solid {
+    color: #fff;
+    background: #DA3743;
 }

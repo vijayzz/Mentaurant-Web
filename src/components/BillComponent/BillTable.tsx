@@ -199,6 +199,7 @@ export default function BillTable() {
   return (
     <div className="bill">
       <Table
+      className="bill-antdTable"
         dataSource={dataSource}
         columns={columns}
         scroll={{ y:400}}
