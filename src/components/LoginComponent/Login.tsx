@@ -4,7 +4,7 @@ import { EyeOutlined } from '@ant-design/icons';
 import { Button, Checkbox } from 'antd';
 import { useNavigate } from 'react-router-dom';
 
-export default function Login() {
+export default function Login({role}:any) {
     const navigate = useNavigate()
     const handleLogin = () => {
         navigate("/home")

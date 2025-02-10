@@ -1,0 +1,18 @@
+.edit-title-container {
+    display: flex;
+    height: 13px;
+    width: 100%;
+    margin-top: 9px;
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+.edit-closed-buttons {
+    color: #E04040;
+    margin-left: 60%;
+
+}
+
+:where(.css-dev-only-do-not-override-7ny38l).ant-drawer-right>.ant-drawer-content-wrapper {
+    box-shadow: none;
+}
