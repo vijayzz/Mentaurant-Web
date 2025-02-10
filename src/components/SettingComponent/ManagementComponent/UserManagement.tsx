@@ -12,11 +12,12 @@ export default function UserManagement() {
     return (
         <div style={{
             backgroundColor: '#F6F6F6',
-            marginLeft: '25%',
+            marginLeft: '24%',
             marginTop: '5%',
-            width: '100%',
+            width: '74%',
             height: '555px',
-            borderRadius: '14px'
+            borderRadius: '14px',
+            position:'fixed'
         }}>
             <UserRole onClick={handleRoleClick} roleSelection={selectedRole} />
             {selectedRole === "Manager" && <UserTable />}

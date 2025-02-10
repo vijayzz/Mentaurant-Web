@@ -1,0 +1,15 @@
+:where(.css-dev-only-do-not-override-7ny38l).ant-modal-root .ant-modal-centered .ant-modal {
+    top: -29%;
+}
+.delete-cancel-btn.ant-btn-color-dangerous{
+    color: #DA3743;
+}
+.delete-cancel-btn.ant-btn-color-dangerous.ant-btn-variant-outlined {
+    background: #ffffff;
+}
+.delete-cancel-btn.ant-btn {
+    font-size: 14px;
+    height: 24px;
+    width: 25%;
+    border-radius: 6px;
+}

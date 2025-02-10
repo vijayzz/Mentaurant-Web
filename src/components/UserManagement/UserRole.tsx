@@ -4,9 +4,9 @@ import { PlusCircleOutlined } from '@ant-design/icons'
 import { useState } from 'react'
 import AddProfile from './AddProfile'
 export default function UserRole({ onClick, roleSelection }: any) {
-    const [addProfile, setAddProfile] = useState<any>(false)
-    const handleAddProfile = () => {
-        setAddProfile(true)
+    const [showProfile, setShowProfile] = useState<any>(false)
+    const handleProfile = () => {
+        setShowProfile(true)
     }
 
     const roles = [
@@ -36,8 +36,8 @@ export default function UserRole({ onClick, roleSelection }: any) {
             }
 
             </div>
-            <Button type='primary' danger className='add-btns' onClick={handleAddProfile}><PlusCircleOutlined />Add</Button>
-            {addProfile && <AddProfile />}
+            <Button type='primary' danger className='add-btns' onClick={handleProfile}><PlusCircleOutlined />Add</Button>
+            <AddProfile show={showProfile} setShow={setShowProfile} />
         </div>
 
     )
