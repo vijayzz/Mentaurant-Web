@@ -3,16 +3,17 @@ import './TableTab.css'
 
 
 export default function TableTab(props: any) {
-    const { tableNo, status, occupiedTable, callBack } = props;
+    const { tableNo, status, callBack } = props;
 
     return (
         <>
             <div className='container'>
-                <img
-                
-                    src={occupiedTable === status ? appImages.tableOccupied : appImages.tableAvailable}
-                    onClick={() => callBack(status)}
+                <img className='image'
+
+                    src={status === 'occupied' ? appImages.tableOccupied : appImages.tableAvailable}
+                    onClick={callBack}
                 />
+               <span className='num'>{tableNo}</span>
 
             </div>
 
