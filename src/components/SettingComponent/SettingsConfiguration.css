@@ -1,13 +1,11 @@
 .settings-configuration {
-    width: 17%;
     height: 555px;
     background-color: #EDFBFA;
-    /* position: relative; */
-    left: 6%;
+    left: 7%;
     top: 68px;
     padding: 10px;
     border-radius: 14px;
-    position: absolute;
+    position: fixed;
 
 }
 

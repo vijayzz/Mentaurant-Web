@@ -1,0 +1,47 @@
+/* .amount{
+    text-align: center; 
+    display: block; 
+    padding-top: 10px; 
+} */
+.amount, .sub-amount, .total-amount {
+    text-align: right;
+    margin-right: -16px;
+    
+}
+
+/* .sub-amount{
+    text-align: right;
+    padding-left: 10px;
+} */
+
+.dash-border{
+    border-top: 2px dashed #A9A9A9;
+    padding-top: 8px ;
+}
+
+/* .total-amount{
+   font-weight: bolder;
+   font-family: "Roboto";
+   font-size: 24px;
+   text-align: right;
+   color: #DA3743;
+} */
+
+
+
+.total-amount {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    flex-grow: 1;
+}
+
+/* .total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+} */

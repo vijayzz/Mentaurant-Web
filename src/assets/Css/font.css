@@ -8,3 +8,7 @@
     font-family: "Roboto";
     src: url("../Font/Roboto-Light.ttf") format(woff2);
 }
+@font-face {
+    font-family: "Poppins";
+    src: url("../Font/Poppins-Medium.ttf") format(woff2) ;
+}

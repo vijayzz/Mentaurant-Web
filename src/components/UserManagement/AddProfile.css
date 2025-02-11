@@ -1,0 +1,95 @@
+.add-profile-container {
+    position: fixed;
+    right: 0;
+    width: 26%;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.title-container {
+    display: flex;
+    width: 100%;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: -3%;
+}
+
+:where(.css-dev-only-do-not-override-7ny38l).ant-drawer-right>.ant-drawer-content-wrapper {
+    top: 0;
+    right: 0;
+    width: 30%;
+}
+:where(.css-dev-only-do-not-override-7ny38l).ant-drawer .ant-drawer-header{
+    padding: 0px;
+}
+.closed-buttons {
+    color: #E04040;
+    margin-left: 60%;
+}
+
+.text-profile {
+    display: flex;
+    gap: 70%;
+    border-bottom: 1px solid #FFF2F3;
+}
+
+.profile-imgs {
+    margin-top: 3%;
+    margin-left: 30%;
+}
+
+.staff-id {
+    color: #454545;
+    margin-left: 30%;
+    margin-top: 5%;
+    font-family: "Roboto";
+    font-weight: 600;
+}
+
+.id-number {
+    color: #E04040;
+}
+
+.profile-input {
+    outline: none;
+    border: 1px solid #EBEDFC;
+    margin: 0;
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #454545;
+    font-family: "Roboto";
+}
+
+.profile-label {
+    margin-top: 20px;
+    color: #454545;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cancel-btn.ant-btn-color-dangerous.ant-btn-variant-outlined {
+    border-color: #DA3743;
+    background: #ffffff;
+    height: 24px;
+    width: 100px;
+    margin-top: 5%;
+}
+
+.save-btn.ant-btn-color-dangerous.ant-btn-variant-solid {
+    height: 24px;
+    color: #fff;
+    background: #DA3743;
+    width: 100px;
+    margin-left: 10px;
+}
+:where(.css-dev-only-do-not-override-7ny38l).ant-drawer .ant-drawer-content {
+  overflow: hidden;
+}

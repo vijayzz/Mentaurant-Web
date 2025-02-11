@@ -9,11 +9,26 @@ import UserManagement from "./components/SettingComponent/ManagementComponent/Us
 import FloorManagement from "./components/SettingComponent/ManagementComponent/FloorManagement";
 import TableManagement from "./components/SettingComponent/ManagementComponent/TableManagement";
 import MenuManagement from "./components/SettingComponent/ManagementComponent/MenuManagement";
+import Login from "./components/LoginComponent/Login";
+
 
 export default function Navigate() {
+    const obj:any = {
+        admin: "/admin/home",
+        chef: '/chef/home'
+          
+      }
+      function role(userRole:any) {
+          if (obj[userRole]) {
+            window.location.href = obj[userRole]; 
+          } else {
+            console.error('not found');
+          }
+       }
     return (
         <Routes>
-            <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Login role={role} />} />
+            <Route path="/" element={<Layout/>}>
                 <Route path="/home" element={<Home />} />
                 <Route path="/menu" element={<FoodMenu />} />
                 <Route path="/settings" element={<Setting />}>
