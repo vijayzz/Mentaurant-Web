@@ -6,9 +6,9 @@ import biriyanii from "../../assets/images/biriyanii.jpg";
 import soupp from "../../assets/images/soupp.jpg";
 import pizaa from "../../assets/images/pizaa.jpg";
 import vegBiryani from "../../assets/images/vegBiryani.jpg";
-import soup from "../../assets/images/soup.png";
 import vegSymbol from "../../assets/images/vegSymbol.png"; 
 import nonVegSymbol from "../../assets/images/nonVegSymbol.png"; 
+import soup from '../../assets/images/soup.svg'
 
 export default function Foods() {
   
