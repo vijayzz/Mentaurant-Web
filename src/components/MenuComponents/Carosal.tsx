@@ -28,7 +28,7 @@ export default function CarouselComponent(props: CarouselComponentProps) {
   };
 
   return (
-    <div style={{ position: 'relative', padding: '20px' , left:'17px' , top:"51px"}}>
+    <div style={{ position: 'relative', padding: '20px' , left:'29px' , top:"51px"}}>
       <h4 style={{ fontFamily:'system-ui' , fontWeight:700 }}>Menu</h4>
       <div ref={scrollRef} className="scrollable-container">
         {foodCategories.map((category) => (
