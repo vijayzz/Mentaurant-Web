@@ -81,6 +81,8 @@
     height: 24px;
     width: 100px;
     margin-top: 5%;
+    color:#DA3743;
+    border-radius: 5px;
 }
 
 .save-btn.ant-btn-color-dangerous.ant-btn-variant-solid {

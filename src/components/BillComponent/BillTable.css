@@ -1,5 +1,5 @@
 .bill {
-    width: 55%;
+    width: 50%;
     box-sizing: border-box;
     margin-left: 7%;
     margin-top: 1%;
@@ -19,8 +19,9 @@
     height: 20px;
 }
 
-.selected-row {
+.selected-row td{
     background-color: #DA3743 !important;
+    color: #fff !important;
 }
 
 .ant-table-tbody>tr:hover>td {
@@ -66,7 +67,7 @@
     font-weight: 600;
 }
 
-
-.ant-table-wrapper .ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
-    background-color: #FFF1C7 !important;
+ .ant-table-tbody>tr:hover>td {
+    background-color: #fff !important;
+    color: #2C2C2C !important;
 }

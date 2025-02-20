@@ -1,20 +1,29 @@
-.payment-btn{
-    background-color:#fff;
+.payment-btn {
+    background-color: #fff;
     border-radius: 25px;
     height: 32px;
     width: 165px;
     margin-left: 2%;
     margin-top: 10px;
     color: #898989;
+    border: 1px solid #898989;
 }
 
-.selectColor{
+.payment-btn.selectColor {
     background-color: #DA3743;
-    color: #FFFFFF;
+    color: #fff;
+    border:1px solid #DA3743
 }
 
-:where(.css-dev-only-do-not-override-7ny38l).ant-btn-variant-outlined:not(:disabled):not(.ant-btn-disabled):hover,
-:where(.css-dev-only-do-not-override-7ny38l).ant-btn-variant-dashed:not(:disabled):not(.ant-btn-disabled):hover {
+
+.payment-btn:where(.css-dev-only-do-not-override-7ny38l).ant-btn-variant-outlined,
+:where(.css-dev-only-do-not-override-7ny38l).ant-btn-variant-dashed {
+    border: 1px solid #898989;
     color: #898989;
-    border-color: #898989;
+}
+
+.payment-btn:where(.css-dev-only-do-not-override-7ny38l).ant-btn-variant-outlined:not(:disabled):not(.ant-btn-disabled):hover {
+    border: 1px solid #898989;
+    background: #DA3743;
+    color: #fff;
 }

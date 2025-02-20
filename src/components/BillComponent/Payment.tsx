@@ -18,7 +18,7 @@ export default function Payment() {
     };
 
     return (
-        <div style={{ marginLeft: '5%' }}>
+        <div style={{ display:'flex', marginLeft: '6%',width:'50%' }}>
             {paymentDetail.map(({ id, payDetail,count }) => (
                 <Button
                     key={id}

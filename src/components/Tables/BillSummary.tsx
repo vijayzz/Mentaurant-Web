@@ -1,16 +1,14 @@
-import { useState } from "react";
+
 import OrderTab from "./OrderTab"
 import { Button, Table } from "antd";
 import './BillSummary.css'
 import { appImages } from "../../globals/appImages";
-import { log } from "console";
 import SubTotal from "./SubTotal";
 
 export default function BillSummary() {
 
   const ordertab = [
     { orderId: 12564878, tableNo: 1 }
-
 
   ]
 
