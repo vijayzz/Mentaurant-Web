@@ -18,7 +18,8 @@ export default function BillCalendar() {
         { id: 12, name: "December", days: 31 },
     ];
 
-    const [selectedMonthId, setSelectedMonthId] = useState<any>(null);
+    const [selectedMonthId, setSelectedMonthId] = useState(null);
+    const [selectedDate, setSelectedDate] = useState<any>(null);
 
     return (
         <div style={{ display: "flex" }}>
@@ -29,7 +30,10 @@ export default function BillCalendar() {
                 <div>
                     <Select
                         className="select-options"
-                        onChange={(value) => setSelectedMonthId(value)}
+                        onChange={(value) => {
+                            setSelectedMonthId(value);
+                            setSelectedDate(null); // Reset date when month changes
+                        }}
                         placeholder="Month"
                     >
                         {months.map((month) => (
@@ -44,12 +48,16 @@ export default function BillCalendar() {
                     <Button className="all-btn">All</Button>
                 </div>
                 <div style={{ position: "relative", top: "7px" }}>
-                    <Space >
+                    <Space className="month-date">
                         {
                             Array.from(
-                                { length: months.find((m) => m.id === selectedMonthId)?.days ||0 },
+                                { length: months.find((m) => m.id === selectedMonthId)?.days || 0 },
                                 (_, i) => (
-                                    <Button key={i + 1} className="custom-button">
+                                    <Button
+                                        key={i + 1}
+                                        className={`custom-button ${selectedDate === i + 1 ? "selected-date" : ""}`}
+                                        onClick={() => setSelectedDate(i + 1)}
+                                    >
                                         {i + 1}
                                     </Button>
                                 )

@@ -1,0 +1,27 @@
+.order-containers {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #E1E1E1
+}
+.order-text{
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.txts{
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 600;
+    color: #4F4F4F;
+}
+.span-table{
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+    color: #1D1D1D;
+}
+.span-floor{
+    color:#1D1D1D;
+    font-weight:600;
+}

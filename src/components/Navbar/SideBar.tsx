@@ -4,48 +4,116 @@ import { appImages } from '../../globals/appImages';
 
 export default function SideBar() {
     const navigate = useNavigate();
-    const location = useLocation(); 
+    const location = useLocation();
 
     const handlePage = (path: string) => {
         navigate(path);
     };
+    const sideMenu = {
+        admin: [
+            {
+                id: 1,
+                img: appImages.homeImg,
+                name: "Home",
+                path: "/home"
+
+            }, ,
+            {
+                id: 2,
+                img: appImages.dineimg,
+                name: "Menu",
+                path: "/menu"
+
+            },
+            {
+                id: 3,
+                img: appImages.tableimg,
+                name: "Table",
+                path: "/table"
+
+            },
+            {
+                id: 4,
+                img: appImages.billimg,
+                name: "Bill",
+                path: "/bill"
+
+            },
+            {
+                id: 5,
+                img: appImages.settingImg,
+                name: "Setting",
+                path: "/settings"
+
+            },
+        ],
+        manager: [
+            {
+                id: 1,
+                img: appImages.homeImg,
+                name: "Home",
+                path: "/home"
+
+            }, ,
+            {
+                id: 2,
+                img: appImages.dineimg,
+                name: "Menu",
+                path: "/menu"
+
+            },
+            {
+                id: 3,
+                img: appImages.tableimg,
+                name: "Table",
+                path: "/table"
+
+            },
+        ],
+        cashier: [
+            {
+                id: 1,
+                img: appImages.homeImg,
+                name: "Home",
+                path: "/home"
+
+            }, ,
+            {
+                id: 2,
+                img: appImages.billimg,
+                name: "Bill",
+                path: "/bill"
+
+            },
+        ],
+        chef: [
+            {
+                id: 1,
+                img: appImages.homeImg,
+                name: "Home",
+                path: "/home"
+
+            }, ,
+            {
+                id: 2,
+                img: appImages.dineimg,
+                name: "Menu",
+                path: "/menu"
+
+            },
+        ]
+    }
+
 
     return (
         <div className="Side-Menu-container">
-            <div
-                className={`side-menus ${location.pathname === "/home" ? 'active' : ''}`}
-                onClick={() => handlePage("/home")}
-            >
-                <img src={appImages.homeImg} alt="" className="side-menu-imgs" />
-                <p className="side-menu-text">Home</p>
-            </div>
-            <div
-                className={`side-menus ${location.pathname === "/menu" ? 'active' : ''}`}
-                onClick={() => handlePage("/menu")}
-            >
-                <img src={appImages.dineimg} alt="" className="side-menu-imgs" />
-                <p className="side-menu-text">Menu</p>
-            </div>
-            <div
-                className={`side-menus ${location.pathname === "/table" ? 'active' : ''}`}
-                onClick={() => handlePage("/table")}
-            >
-                <img src={appImages.tableimg} alt="" className="side-menu-imgs" />
-                <p className="side-menu-text">Table</p>
-            </div>
-            <div
-                className={`side-menus ${location.pathname === "/bill" ? 'active' : ''}`}
-                onClick={() => handlePage("/bill")}
-            >
-                <img src={appImages.billimg} alt="" className="side-menu-imgs" />
-                <p className="side-menu-text">Bill</p>
-            </div>
-            <div
-                className={`side-menus ${location.pathname.startsWith  ("/settings") ? 'active' : ''}`}
-                onClick={() => handlePage("/settings")}
-            >
-                <img src={appImages.settingImg} alt="" className="side-menu-imgs" />
-                <p className="side-menu-text">Setting</p>
+            <div>
+                {sideMenu["admin"].map((items: any) => (
+                    <div className={`side-menus ${location.pathname === items.path ? "active" : ""}`} onClick={() => handlePage(items.path)}>
+                        <img src={items?.img} alt="" className="side-menu-imgs" />
+                        <p className="side-menu-text">{items.name}</p>
+                    </div>
+                ))}
             </div>
         </div>
     );

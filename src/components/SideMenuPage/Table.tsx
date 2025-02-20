@@ -1,5 +1,9 @@
+import TableMain from "../Tables/TableMain";
+
 export default function Table(){
     return(
-        <h1>asdfgjk;</h1>
+        <div>
+            <TableMain/>
+        </div>
     )
 }

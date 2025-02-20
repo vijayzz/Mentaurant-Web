@@ -69,7 +69,7 @@ export default function EditProfile({ open, setOpen, user, details }: any) {
                 <p>No user selected.</p>
             )}
 
-            <div style={{ marginLeft: '30%', }}>
+            <div style={{ marginLeft: '70px', }}>
                 <Button className='cancel-btn' onClick={onClose}>
                     Cancel
                 </Button>
