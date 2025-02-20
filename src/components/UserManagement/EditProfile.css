@@ -16,3 +16,11 @@
 :where(.css-dev-only-do-not-override-7ny38l).ant-drawer-right>.ant-drawer-content-wrapper {
     box-shadow: none;
 }
+.cancel-btn:where(.css-dev-only-do-not-override-7ny38l).ant-btn-variant-outlined, :where(.css-dev-only-do-not-override-7ny38l).ant-btn-variant-dashed {
+    border:1px solid #DA3743;
+    background: #ffffff;
+    border-radius: 5px;
+    color: #DA3743;
+    width: 45%;
+    height: 25px;
+}

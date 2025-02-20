@@ -1,0 +1,32 @@
+.roles-containers {
+    display: flex;
+    gap: 30%;
+    border-bottom: 1px dashed #E1E1E1;
+}
+
+.imgs-items {
+    padding-left: 10%;
+    margin-top: -5%;
+}
+
+.rolename-item {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-bottom: 0px;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profileimg-items {
+    margin-left: 15%;
+    margin-top: -7px;
+}
+
+.name-items {
+    margin-bottom: 0px;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 600;
+    color: #DA3743;
+}
