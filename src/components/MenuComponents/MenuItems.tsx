@@ -1,11 +1,11 @@
 import CarouselComponent from '../MenuComponents/Carosal';
-import soup from '../../assets/images/soup.png';
 import burgers from '../../assets/images/burgers.png';
 import appetizers from '../../assets/images/appetizers.png';
 import seafood from '../../assets/images/seafoods.png';
 import pastas from '../../assets/images/pastas.png';
 import sweets from '../../assets/images/sweets.png';
 import juices from '../../assets/images/juices.png';
+import soup from '../../assets/images/soup.svg'
 
 export default function MenuItems() {
   const foodCategories = [
